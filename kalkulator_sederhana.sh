@@ -36,8 +36,13 @@ while true; do
         echo "Hasil Pengurangan dari $angka1 dan $angka2: $hasil"
     3) hasil=$(( angka1 * angka2 ));;
         echo "Hasil Perkalian dari $angka1 dan $angka2: $hasil"
-    4) hasil=$(( angka1 / angka2 ));;
-        echo "Hasil Pembagian dari $angka1 dan $angka2: $hasil"
+    4) if [ "$angka2" -eq 0 ]; then
+               echo "Error: Pembagian dengan nol tidak diperbolehkan."
+           else
+               hasil=$(echo "scale=2; $angka1 / $angka2" | bc)
+               echo "Hasil Pembagian dari $angka1 / $angka2 = $hasil"
+           fi ;;
+        *) echo "Pilihan tidak valid." ;;
     esac
 
 
