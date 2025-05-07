@@ -45,5 +45,16 @@ while true; do
         *) echo "Pilihan tidak valid." ;;
     esac
 
-
+# validasi lanjut atau tidak
+    echo -n "Apakah Anda ingin melanjutkan? (y/n): "
+    read -r lanjut
+    case $lanjut in
+        [yY])
+            continue;;
+        [nN])
+            echo "Terima kasih sudah menggunakan Kalkulator Sederhana."
+            exit 0;;
+        *)
+            echo "Pilihan tidak valid.";;
+    esac
 done
