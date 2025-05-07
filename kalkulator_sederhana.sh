@@ -16,4 +16,9 @@ while true; do
         echo "Terima kasih sudah menggunakan Kalkulator Sederhana."
         exit 0
     fi
+
+    echo -n "Masukkan angka pertama: "
+    read angka1
+    echo -n "Masukkan angka kedua: "
+    read angka2
 done
