@@ -9,7 +9,7 @@ while true; do
     echo "3. Perkalian"
     echo "4. Pembagian"
     echo "5. Keluar"
-    echo -n "Pilih operasi (1-5): "
+    echo -n "Pilih operasi yang ingin digunakan (1-5): "
     read operasi
 
     if [ "$operasi" -eq 5 ]; then
