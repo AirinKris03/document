@@ -30,12 +30,12 @@ while true; do
 
 # operasi
     case $operasi in
-    1) hasil= $(( angka1 + angka2 ));;
-        echo "Hasil Penjumlahan dari $angka1 dan $angka2: $hasil"
-    2) hasil= $(( angka1 - angka2 ));;
-        echo "Hasil Pengurangan dari $angka1 dan $angka2: $hasil"
-    3) hasil= $(( angka1 * angka2 ));;
-        echo "Hasil Perkalian dari $angka1 dan $angka2: $hasil"
+    1) hasil= $(( angka1 + angka2 ))
+        echo "Hasil Penjumlahan dari $angka1 dan $angka2: $hasil";;
+    2) hasil= $(( angka1 - angka2 ))
+        echo "Hasil Pengurangan dari $angka1 dan $angka2: $hasil";;
+    3) hasil= $(( angka1 * angka2 ))
+        echo "Hasil Perkalian dari $angka1 dan $angka2: $hasil";;
     4) if [ "$angka2" -eq 0 ]; then
                echo "Error: Pembagian dengan nol tidak diperbolehkan."
            else
