@@ -15,8 +15,9 @@ while true; do
     if [ "$operasi" -eq 5 ]; then
         echo "Terima kasih sudah menggunakan Kalkulator Sederhana."
         exit 0
-    else if ! [[ "$operasi" =~ ^[1-4]+$ ]]; then
-        echo "Pilihan tidak valid."
+    elif ! [[ "$operasi" =~ ^[1-4]$ ]]; then
+        echo "Pilihan tidak valid. Silakan masukkan angka antara 1 sampai 5."
+        sleep 2
         continue
     fi
 
